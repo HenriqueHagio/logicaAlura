@@ -20,8 +20,21 @@
         return imc;
     }
     var nome = prompt("Informe seu nome");
-    var alturaInformada = prompt(nome +" Informe sua altura");
-    var pesoInformado  = prompt(nome +" Informe seu peso")
+    var alturaInformada = prompt(nome + " Informe sua altura");
+    var pesoInformado = prompt(nome + " Informe seu peso")
     var imc = calculaImc(alturaInformada, pesoInformado);
-    mostra(nome +", o seu IMC calculado é " + imc)  
+    mostra(nome + ", o seu IMC calculado é " + imc)
+
+    if (imc < 18.5) {
+        mostra("Voce ta abaixo")
+    }
+    if (imc > 35) {
+        mostra("voce ta acima")
+    }
+    if (imc > 18.5 && imc <= 35) {
+        mostra("voce ta na media")
+    }
+
+
+
 </script>
