@@ -21,18 +21,18 @@
 
     var numeroPensado = sorteia(5);
     console.log(numeroPensado)
-    var chute = parseInt(prompt("Digete seu chute!"));
-    if (chute == numeroPensado) {
-        mostra("Você acertou!");
+    var tentativas = 1;
+    while (tentativas <= 3) {
+        var chute = parseInt(prompt("Digete seu chute!"));
+        if (chute == numeroPensado) {
+            mostra("Você acertou!");
+            break;
 
-    } else {
-        if (chute < numeroPensado) {
-            mostra("Voce errou, seu chute é menor que o numero pensado");
+        } else {
+            mostra("errou");
+
         }
-        if (chute > numeroPensado) {
-            mostra("voce errou, seu chute é maior que o numero tentado");
-        }
+        tentativas++;
     }
-
 
 </script>
