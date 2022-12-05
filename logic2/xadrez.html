@@ -1,0 +1,45 @@
+<meta charset="UTF-8">
+<canvas width="600" height="400"></canvas>
+<script>
+
+    function desenhaQuadrado(x, y, x1, y1, cor) {
+        var tela = document.querySelector('canvas');
+        var pincel = tela.getContext('2d');
+
+        pincel.fillStyle = cor;
+        pincel.fillRect(x, y, x1, y1);
+        pincel.fillStroke = 'black';
+        pincel.strokeRect(x, y, x1, y1);
+    }
+
+    desenhaQuadrado(0, 0, 50, 50, 'black');
+    desenhaQuadrado(50, 0, 50, 50, 'white');
+    desenhaQuadrado(100, 0, 50, 50, 'black');
+    desenhaQuadrado(150, 0, 50, 50, 'black');
+    desenhaQuadrado(200, 0, 50, 50, 'white');
+    desenhaQuadrado(250, 0, 50, 50, 'black');
+    desenhaQuadrado(300, 0, 50, 50, 'black');
+    desenhaQuadrado(350, 0, 50, 50, 'white');
+    desenhaQuadrado(400, 0, 50, 50, 'black');
+    desenhaQuadrado(0, 0, 50, 50, 'black');
+    desenhaQuadrado(50, 0, 50, 50, 'white');
+    desenhaQuadrado(100, 0, 50, 50, 'black');
+    desenhaQuadrado(0, 0, 50, 50, 'black');
+    desenhaQuadrado(50, 0, 50, 50, 'white');
+    desenhaQuadrado(100, 0, 50, 50, 'black');
+    desenhaQuadrado(0, 0, 50, 50, 'black');
+    desenhaQuadrado(50, 0, 50, 50, 'white');
+    desenhaQuadrado(100, 0, 50, 50, 'black');
+    desenhaQuadrado(0, 0, 50, 50, 'black');
+    desenhaQuadrado(50, 0, 50, 50, 'white');
+    desenhaQuadrado(100, 0, 50, 50, 'black');
+    desenhaQuadrado(0, 0, 50, 50, 'black');
+    desenhaQuadrado(50, 0, 50, 50, 'white');
+    desenhaQuadrado(100, 0, 50, 50, 'black');
+    desenhaQuadrado(0, 0, 50, 50, 'black');
+    desenhaQuadrado(50, 0, 50, 50, 'white');
+    desenhaQuadrado(100, 0, 50, 50, 'black');
+    desenhaQuadrado(0, 0, 50, 50, 'black');
+    desenhaQuadrado(50, 0, 50, 50, 'white');
+    
+</script>
